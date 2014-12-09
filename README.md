@@ -5,8 +5,16 @@ James' shinyapps
 
 Click on a subfolder to access the `server.r` and `ui.r` for each shiny app.   
 
-
-
+--------  
+  
+  
 ###### Contents
 
 + engsoccerbeta - Exploring historical trends in English soccer data, https://jalapic.shinyapps.io/engsoccerbeta/
+
+
+
+###### Contact
+
+email:  jc3181 AT columbia DOT edu
+twitter:  @jalapic
