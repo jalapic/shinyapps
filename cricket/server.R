@@ -40,7 +40,6 @@ df$overseas <- ifelse(df$teamlong==df$country, df$overseas <- FALSE, df$overseas
     xvarname <-  input$xvar
     yvarname <-  input$yvar
     
-    allcountries <- unique(df$team) #added this to keep all countries in every df - ensures color consistency
     
   if(input$vteam != "All Teams" & input$hteam=="All Teams"){  df <- df %>% filter(opp==oppteam) }
   if(input$vteam != "All Teams" & input$hteam!="All Teams"){  df <- df %>% filter(opp==oppteam & teamlong==playerteam) }
