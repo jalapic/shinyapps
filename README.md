@@ -17,6 +17,9 @@ https://jalapic.shinyapps.io/engsoccerbeta/
 + cricket - Interactive ggvis charts of every test match batsman
 https://jalapic.shinyapps.io/cricket/  
 
++ soccerteams - Interactive ggvis chart of historical soccer teams/seasons
+https://jalapic.shinyapps.io/soccerteams/
+
 
       
 --------  
