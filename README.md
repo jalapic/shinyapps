@@ -20,6 +20,9 @@ https://jalapic.shinyapps.io/cricket/
 + soccerteams - Interactive ggvis chart of historical soccer teams/seasons
 https://jalapic.shinyapps.io/soccerteams/
 
++ music - Plotting temporal patterns of social interactions using 'music notation'
+https://jalapic.shinyapps.io/music/
+
 
       
 --------  
