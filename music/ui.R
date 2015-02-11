@@ -29,6 +29,14 @@ fluidRow(
                                        "Winners & Losers" = 2,
                                        "Losers only" = 3), 
                         selected = 2,
+                        inline=T),
+           
+           
+           
+           radioButtons("graphtype", "Graph Type",
+                        choices = list("All individuals" = 1, 
+                                       "Only selected (min 2 indivs need to be checked)" = 2), 
+                        selected = 1,
                         inline=T)
            
            
@@ -38,6 +46,8 @@ fluidRow(
     column(4,
            
     sliderInput("timeper", label = h3("Time Period"), 1, 999, value = c(1,999), step=10, ticks=T)
+    
+    
     
     ),
     

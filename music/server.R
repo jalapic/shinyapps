@@ -27,7 +27,7 @@ shinyServer(function(input, output) {
 #### Reading in data and setting up dataframe
 
 
-
+    
   
   df1 <- reactive({
     
@@ -38,6 +38,12 @@ shinyServer(function(input, output) {
       newdf %>% filter(Time >= mintime & Time <= maxtime)
     
     ranks <- input$checkGroup
+    
+    
+if (input$graphtype == 1) {
+      
+    
+    
     
     if (input$winloser == 1) {
       
@@ -55,9 +61,44 @@ shinyServer(function(input, output) {
       
     df1 <- df1[((df1$loser %in% ranks) == T),]
     
-})
+    }
+    
+else   
+  
+{
+  
+  if (input$winloser == 1) {
+  
+  df1 <- df1[(df1$winner %in% ranks ==T) & (df1$loser %in% ranks ==T),]    
+  df1 <- df1[((df1$winner %in% ranks) == T),]
+  }
+
+
+  else if (input$winloser == 2) {
+  
+  
+    df1 <- df1[(df1$winner %in% ranks ==T) & (df1$loser %in% ranks ==T),]    
+    df1 <- df1[((df1$winner %in% ranks) == T | (df1$loser %in% ranks) == T),]
+   }
+
+
+  else
+  
+  
+    df1 <- df1[(df1$winner %in% ranks ==T) & (df1$loser %in% ranks ==T),]    
+    df1 <- df1[((df1$loser %in% ranks) == T),]
+
+      
+}    
+    
+    
+    })
   
 
+
+  
+  
+  
 
   output$MyPlot <- renderPlot({
     
