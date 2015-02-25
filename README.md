@@ -20,6 +20,9 @@ https://jalapic.shinyapps.io/cricket/
 + soccerteams - Interactive ggvis chart of historical soccer teams/seasons
 https://jalapic.shinyapps.io/soccerteams/
 
++ gamebygame - Comparing EPL teams season by season performances - using shinydashboard
+https://jalapic.shinyapps.io/gamebygame/
+
 + music - Plotting temporal patterns of social interactions using 'music notation'
 https://jalapic.shinyapps.io/music/
 
