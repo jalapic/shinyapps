@@ -26,7 +26,8 @@ https://jalapic.shinyapps.io/gamebygame/
 + music - Plotting temporal patterns of social interactions using 'music notation'
 https://jalapic.shinyapps.io/music/
 
-
++ basicstats - Using shinydashboard to explore data viz and basic stats
+https://jalapic.shinyapps.io/basicstats/
       
 --------  
 
