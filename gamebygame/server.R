@@ -40,6 +40,7 @@ shinyServer(function(input, output) {
   
   doc1 <- readHTMLTable("http://www.espn.co.uk/football/sport/match/index.html?event=3;type=results")
   temp1 <- doc1[[2]][c(1,3,4,5)]
+  #temp1 <- doc1[[2]][c(1,3:6)] - depending on daily layout of espn website, this line might be needed. 
   colnames(temp1)<-c("date", "home", "FT", "visitor")
   
   tempx1 <- NULL
