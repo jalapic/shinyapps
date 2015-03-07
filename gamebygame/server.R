@@ -39,9 +39,13 @@ shinyServer(function(input, output) {
   # On launch, get 2014/15 data
   
   doc1 <- readHTMLTable("http://www.espn.co.uk/football/sport/match/index.html?event=3;type=results")
-  temp1 <- doc1[[2]][c(1,3,4,5)]
-  #temp1 <- doc1[[2]][c(1,3:6)] - depending on daily layout of espn website, this line might be needed. 
-  colnames(temp1)<-c("date", "home", "FT", "visitor")
+
+  #Because espn changes it's mind often about how many columns to use in its tables
+  if (ncol(doc1[[2]]) <= 8) { temp1 <- doc1[[2]][c(1,3:5)] }
+  else { temp1 <- doc1[[2]][c(1,4:6)] }
+
+
+ colnames(temp1)<-c("date", "home", "FT", "visitor")
   
   tempx1 <- NULL
   tempx1 <- ifelse(is.na(temp1$home)==T, as.character(temp1$date), NA)  #as.character() because 'date' is a factor
