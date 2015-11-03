@@ -4,7 +4,7 @@ library(grid)
 library(dplyr)
 
 shinyUI(fluidPage(
-  headerPanel("Music Notation Plots of Social Interactions"),
+  headerPanel("Time Ordered Network of Social Interactions"),
   
     plotOutput("MyPlot"),
   
